@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/gigTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/artistImg"
+        android:layout_toRightOf="@+id/artistImg"
+        android:paddingTop="3dp"
+        android:textColor="#254156"
+        android:textSize="@dimen/gigTitle"
+        android:textStyle="bold" />
+    
+
+    <!-- Venue -->
+    <TextView
+        android:id="@+id/gigDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:textColor="#254156"
+        android:textSize="@dimen/gigVenue"
+        android:layout_toRightOf="@+id/artistImg"
+        android:layout_below="@+id/gigTitle" />
+    
+    
+
+</RelativeLayout>

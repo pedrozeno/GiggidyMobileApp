@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DashBoardActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/db_gigs_button"
+                style="@style/DefaultButtonText"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_button"
+                android:drawableTop="@drawable/gigs_icon"
+                android:padding="40dp"
+                android:text="Gigs" />
+
+            <Button
+                android:id="@+id/db_profile_button"
+                style="@style/DefaultButtonText"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_button"
+                android:drawableTop="@drawable/profile_icon"
+                android:padding="40dp"
+                android:text="Profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/db_planner_button"
+                style="@style/DefaultButtonText"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_button"
+                android:drawableTop="@drawable/planner_icon"
+                android:padding="40dp"
+                android:text="Planner" />
+
+            <Button
+                android:id="@+id/db_maps_button"
+                style="@style/DefaultButtonText"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/dashboard_button"
+                android:drawableTop="@drawable/maps_icon"
+                android:padding="40dp"
+                android:text="Maps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+            
+            <Button
+            android:id="@+id/db_logout_button"
+            style="@style/DefaultButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_default_bg"
+            android:padding="10dp"
+            android:text="Log Out" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

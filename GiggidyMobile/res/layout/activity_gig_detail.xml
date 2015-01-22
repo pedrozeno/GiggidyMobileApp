@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_border"
+    android:padding="5dp"
+    tools:context=".GigDetaillActivity" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ivArtistImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/default_img"
+        android:maxHeight="160dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvHeadliner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivArtistImage"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ivArtistImage"
+        android:text="Artist"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvGigDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvHeadliner"
+        android:layout_below="@+id/tvHeadliner"
+        android:layout_marginTop="5dp"
+        android:text="Venue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvVenueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvGigDate1"
+        android:layout_below="@+id/tvGigDate1"
+        android:layout_marginTop="5dp"
+        android:text="Date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvOtherArtists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvVenueName"
+        android:layout_below="@+id/tvVenueName"
+        android:layout_marginTop="5dp"
+        android:text="Other Artists"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/list_border"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/bttnAttend"
+            style="@style/FavouriteButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/attend_button_bg"
+            android:padding="10dp"
+            android:text="Attend" />
+
+        <Button
+            android:id="@+id/bttnFavourite"
+            style="@style/FavouriteButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/favourite_button_bg"
+            android:padding="10dp"
+            android:text="Favourite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivArtistImage"
+        android:layout_below="@+id/ivArtistImage"
+        android:orientation="vertical"
+        android:background="@drawable/list_border" 
+        android:layout_marginTop="20dp" 
+        android:layout_marginRight="10dp">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvartistSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a place where artist information is presented" />
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

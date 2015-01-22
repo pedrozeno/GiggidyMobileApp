@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Giggidy</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- FacebookLogin ID -->
+    <string name="app_id">712892575459340</string>
+
+    <!-- FacebookLogin Activity -->
+    <string name="username">Username</string>
+    <string name="user_email">Email</string>
+    <string name="user_gender">Gender</string>
+    <string name="logout_button">Log Out</string>
+
+    <!-- Home Screen Activity -->
+    <string name="gig_list_button">Gigs</string>
+    <string name="planner_button">Planner</string>
+    <string name="user_profile_button">Profile</string>
+    <string name="log_out_button">Log Out</string>
+
+    <!-- Gig Detail Activity -->
+    <string name="artist_detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently </string>
+    <string name="attend_button">Attend</string>
+    <string name="action_share">Share</string>
+
+    <!-- Login Activity -->
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="logon_button">Logon</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="submit_button">Submit</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="FavouriteButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- Activities -->
+    <string name="title_activity_gig_detail">GigDetailTabActivity</string>
+    <string name="title_activity_logon">LogonActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_gig_list">GigListActivity</string>
+    <string name="title_activity_new_gig_list">NewGigListActivity</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+    <string name="title_activity_user_account">UserAccountActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_planner">PlannerActivity</string>
+
+    <!-- Sign Up Activity Errors -->
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_blank_email">enter an email address</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_entry_point">EntryPointActivity</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>
