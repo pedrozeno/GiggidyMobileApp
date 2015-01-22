@@ -12,7 +12,7 @@ package ncirl.project.giggidymobileapp.utils;
 
 import android.app.Application;
 import android.text.TextUtils;
- 
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -95,6 +95,12 @@ public class AppController extends Application {
 
 		// Set Facebook App Id in strings.xml
 		ParseFacebookUtils.initialize(getString(R.string.app_id));
+		
+		ParseUser.enableAutomaticUser();
+		ParseACL defaultACL = new ParseACL();
+		// Optionally enable public read access while disabling public write access.
+		// defaultACL.setPublicReadAccess(true);
+		ParseACL.setDefaultACL(defaultACL, true);
 	}
     
 
